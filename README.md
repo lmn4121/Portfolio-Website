@@ -39,3 +39,10 @@ WiDS Datathon 2024 Challenge 1: binary classification of whether a patient recei
 **Techniques:** Baselines (ANN/CNN), CLAHE and augmentation, frozen VGG16 exploration, final fine-tuned **DenseNet201** with class weights.
 
 **Results:** Final model **validation macro F1 0.92**, **test macro F1 0.83** (written report). Branch also includes the course report and presentation PDFs.
+
+### [Digital-Twin](https://github.com/lmn4121/Project-Portfolio/tree/Digital-Twin) — Resume Chatbot
+Chatbot **digital twin** of Landon Nguyen that answers questions about background, skills, and experience from the resume, with retrieval over project write-ups for richer answers.
+
+**Techniques:** LLM-assisted semantic chunking of markdown project notes, Chroma + OpenAI embeddings RAG, OpenAI Agents SDK tools (retrieval, email capture, unknown-question logging), streaming Gradio chat UI, SQLite session memory.
+
+**Results:** End-to-end twin chatbot grounded in resume and project docs; lead-capture and coverage-gap logging instead of inventing answers; interactive Gradio demo.

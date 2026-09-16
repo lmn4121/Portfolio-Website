@@ -41,8 +41,8 @@ WiDS Datathon 2024 Challenge 1: binary classification of whether a patient recei
 **Results:** Final model **validation macro F1 0.92**, **test macro F1 0.83** (written report). Branch also includes the course report and presentation PDFs.
 
 ### [Digital-Twin](https://github.com/lmn4121/Project-Portfolio/tree/Digital-Twin) — Resume Chatbot
-Chatbot **digital twin** of Landon Nguyen that answers questions about background, skills, and experience from the resume, with retrieval over project write-ups for richer answers.
+Conversational digital twin that answers questions about background, skills, and experience using the resume plus a project knowledge base.
 
-**Techniques:** LLM-assisted semantic chunking of markdown project notes, Chroma + OpenAI embeddings RAG, OpenAI Agents SDK tools (retrieval, email capture, unknown-question logging), streaming Gradio chat UI, SQLite session memory.
+**Techniques:** LLM-assisted semantic chunking into Chroma (`ingest.py`); OpenAI Agents SDK twin with RAG, email capture, and unknown-question tools (`twin.py`); Gradio streaming chat UI (`app.py`).
 
-**Results:** End-to-end twin chatbot grounded in resume and project docs; lead-capture and coverage-gap logging instead of inventing answers; interactive Gradio demo.
+**Results:** End-to-end twin chatbot with retrieval-grounded answers and tools to record leads / unanswered questions instead of inventing replies. Branch includes `requirements.txt` and a prebuilt `twin_db/` vector store.

@@ -42,7 +42,7 @@ function writeSessionId(id: string) {
 export function ChatWidget() {
   const titleId = useId();
   const origin = twinOrigin();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [mounted, setMounted] = useState(false);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);

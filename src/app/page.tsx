@@ -43,6 +43,9 @@ export default function HomePage() {
               <a className="btn btn-ghost" href={`mailto:${site.email}`}>
                 Contact
               </a>
+              <a className="btn btn-ghost" href="#twin">
+                Ask the twin
+              </a>
             </div>
           </div>
         </section>

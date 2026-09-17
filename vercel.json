@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "headers": [
+    {
+      "source": "/twin-proxy/:path*",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
+  ]
+}

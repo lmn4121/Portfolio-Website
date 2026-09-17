@@ -247,7 +247,7 @@ export function ChatWidget() {
         onClick={() => setOpen((v) => !v)}
       >
         <span className="twin-launcher-dot" aria-hidden="true" />
-        <span>{open ? "Close twin" : "Ask Landon’s twin"}</span>
+        <span>Ask Landon’s twin</span>
       </button>
 
       <div
@@ -281,6 +281,13 @@ export function ChatWidget() {
               disabled={busy}
             >
               New chat
+            </button>
+            <button
+              type="button"
+              className="twin-reset"
+              onClick={() => setOpen(false)}
+            >
+              Close
             </button>
           </div>
         </header>

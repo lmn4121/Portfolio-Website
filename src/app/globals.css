@@ -916,7 +916,6 @@ img {
   border-radius: 0.85rem;
   font-size: 0.94rem;
   line-height: 1.45;
-  white-space: pre-wrap;
   word-break: break-word;
 }
 
@@ -925,6 +924,7 @@ img {
   background: var(--ink);
   color: var(--paper);
   border-bottom-right-radius: 0.3rem;
+  white-space: pre-wrap;
 }
 
 .twin-bubble-assistant {
@@ -937,6 +937,104 @@ img {
 
 .twin-bubble-assistant[data-empty="true"] {
   border-color: rgba(82, 86, 92, 0.4);
+}
+
+.twin-md {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.twin-md > *:first-child {
+  margin-top: 0;
+}
+
+.twin-md > *:last-child {
+  margin-bottom: 0;
+}
+
+.twin-md p,
+.twin-md ul,
+.twin-md ol,
+.twin-md pre,
+.twin-md blockquote,
+.twin-md h1,
+.twin-md h2,
+.twin-md h3,
+.twin-md h4 {
+  margin: 0;
+}
+
+.twin-md h1,
+.twin-md h2,
+.twin-md h3,
+.twin-md h4 {
+  font-family: var(--font-display), "Syne", sans-serif;
+  font-size: 1.02rem;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.twin-md ul,
+.twin-md ol {
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.28rem;
+}
+
+.twin-md li {
+  margin: 0;
+}
+
+.twin-md li > ul,
+.twin-md li > ol {
+  margin-top: 0.28rem;
+}
+
+.twin-md a {
+  color: var(--teal-deep);
+  text-underline-offset: 0.12em;
+}
+
+.twin-md a:hover {
+  color: var(--ink);
+}
+
+.twin-md strong {
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.twin-md em {
+  font-style: italic;
+}
+
+.twin-md code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.84em;
+  background: rgba(28, 29, 31, 0.07);
+  border-radius: 0.28rem;
+  padding: 0.08em 0.32em;
+}
+
+.twin-md pre {
+  overflow-x: auto;
+  background: rgba(28, 29, 31, 0.07);
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  padding: 0.65rem 0.75rem;
+}
+
+.twin-md pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.twin-md blockquote {
+  border-left: 2px solid var(--line);
+  padding-left: 0.7rem;
+  color: var(--ink-soft);
 }
 
 .twin-thinking {

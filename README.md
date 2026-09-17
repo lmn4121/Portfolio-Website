@@ -4,16 +4,33 @@ Collection of projects by **Landon Nguyen** — Data Scientist / AI Engineering.
 
 ## Portfolio website
 
-This repository also hosts a static portfolio site (Next.js) on the default branch.
+This repository hosts a static portfolio site (Next.js) on the default branch, including a floating **Ask Landon’s twin** chat widget.
 
 ```bash
 npm install
+cp .env.example .env.local   # optional; defaults to the live Render twin
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). Production build: `npm run build && npm start`.
 
-Deployable on Vercel (root directory; no special config required). Resume PDF is served from `/Landon_Nguyen_Resume.pdf`.
+Deployable on Vercel (root directory). Resume PDF is served from `/Landon_Nguyen_Resume.pdf`.
+
+### Digital twin widget
+
+The widget talks to the live twin on Render: [https://digital-twin-69dv.onrender.com](https://digital-twin-69dv.onrender.com).
+
+That host is the Gradio app from the [`Digital-Twin`](https://github.com/lmn4121/Project-Portfolio/tree/Digital-Twin) branch (`app.py` / `twin.py`). The browser calls Gradio’s public API (`POST /gradio_api/call/respond`, SSE on the returned `event_id`). CORS on Render already reflects Vercel origins, so no OpenAI keys belong in this frontend.
+
+| Vercel env | Required | Notes |
+|------------|----------|--------|
+| `NEXT_PUBLIC_TWIN_API_URL` | no | Defaults to `https://digital-twin-69dv.onrender.com`. Set this if the twin URL changes. |
+| `NEXT_PUBLIC_TWIN_API_MODE` | no | `gradio` (live) or `fastapi` (optional `twin-api` host). Auto-detected from `GET /health`. |
+| `TWIN_API_URL` | no | Server rewrite target for `/twin-proxy/*` if you ever need a same-origin proxy. |
+
+To use the same-origin proxy instead of a direct browser call, set `NEXT_PUBLIC_TWIN_API_URL=/twin-proxy`.
+
+If Render CORS is later restricted, allow the Vercel origin(s) on the twin host (`PORTFOLIO_ORIGINS` for the FastAPI `twin-api`, or Gradio’s allowed origins).
 
 ## About
 

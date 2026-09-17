@@ -152,7 +152,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "twin",
+    id: "digital-twin",
     title: "Resume Chatbot Digital Twin",
     subtitle: "LLM & Agentic AI — Independent Project",
     branch: "Digital-Twin",

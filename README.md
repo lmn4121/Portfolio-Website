@@ -2,6 +2,19 @@
 
 Collection of projects by **Landon Nguyen** — Data Scientist / AI Engineering.
 
+## Portfolio website
+
+This repository also hosts a static portfolio site (Next.js) on the default branch.
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Production build: `npm run build && npm start`.
+
+Deployable on Vercel (root directory; no special config required). Resume PDF is served from `/Landon_Nguyen_Resume.pdf`.
+
 ## About
 
 I’m a data science student at **The University of Texas at Arlington** in the Fastrack program (**B.S. Data Science** with a Biology concentration and Mathematics minor; **M.S. Applied Statistics and Data Science**, expected **December 2027**; GPA **3.9**).
@@ -15,7 +28,7 @@ I have about **6 years** of programming experience and **2 years** applying stat
 
 ## How this repo is organized
 
-Each project lives on its **own branch** with its own README focused on techniques and results. Browse a branch to see the full write-up and code.
+The portfolio site lives on **main**. Each project lives on its **own branch** with its own README focused on techniques and results. Browse a branch to see the full write-up and code.
 
 ## Projects
 

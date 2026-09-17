@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { TwinMarkdown } from "@/components/TwinMarkdown";
 import {
   detectTwinMode,
   newMessageId,
@@ -332,6 +333,8 @@ export function ChatWidget() {
                     <span />
                   </span>
                 </span>
+              ) : m.role === "assistant" ? (
+                <TwinMarkdown text={m.content} />
               ) : (
                 m.content
               )}

@@ -63,8 +63,16 @@ export function ChatWidget() {
 
   useEffect(() => {
     const openPanel = () => setOpen(true);
+    const clearTwinHash = () => {
+      if (window.location.hash !== "#twin") return;
+      const url = `${window.location.pathname}${window.location.search}`;
+      window.history.replaceState(null, "", url || "/");
+      window.scrollTo(0, 0);
+    };
     const onHash = () => {
-      if (window.location.hash === "#twin") setOpen(true);
+      if (window.location.hash !== "#twin") return;
+      setOpen(true);
+      clearTwinHash();
     };
     const onClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement | null;
@@ -72,7 +80,7 @@ export function ChatWidget() {
       if (!link) return;
       event.preventDefault();
       setOpen(true);
-      window.history.replaceState(null, "", "#twin");
+      clearTwinHash();
     };
     window.addEventListener(OPEN_EVENT, openPanel);
     window.addEventListener("hashchange", onHash);

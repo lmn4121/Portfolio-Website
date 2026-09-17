@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, Figtree } from "next/font/google";
+import Script from "next/script";
 import { ChatWidget } from "@/components/ChatWidget";
 import "./globals.css";
 
@@ -36,6 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body>
+        <Script id="strip-twin-hash" strategy="beforeInteractive">
+          {`if(location.hash==="#twin"){history.replaceState(null,"",location.pathname+location.search||"/");scrollTo(0,0);}`}
+        </Script>
         {children}
         {/* Floating twin — after main content so it never owns the hero viewport */}
         <ChatWidget />

@@ -78,12 +78,6 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="meta-row">
-                  <span className="meta-label">Phone</span>
-                  <p className="meta-value">
-                    <a href="tel:+19726326912">{site.phone}</a>
-                  </p>
-                </div>
-                <div className="meta-row">
                   <span className="meta-label">GitHub</span>
                   <p className="meta-value">
                     <a href={site.github} target="_blank" rel="noreferrer">
@@ -235,15 +229,12 @@ export default function HomePage() {
             <p className="section-label">Contact</p>
             <h2 className="section-title">Let&apos;s connect</h2>
             <p className="section-copy">
-              Reach out by email or phone, or browse the project repository on
+              Reach out by email, or browse the project repository on
               GitHub.
             </p>
             <div className="contact-actions">
               <a className="btn btn-primary" href={`mailto:${site.email}`}>
                 {site.email}
-              </a>
-              <a className="btn btn-ghost" href="tel:+19726326912">
-                {site.phone}
               </a>
               <a
                 className="btn btn-ghost"

@@ -2,7 +2,6 @@ export const site = {
   name: "Landon Nguyen",
   title: "Data Scientist | AI Engineering",
   email: "lmnguyen420@gmail.com",
-  phone: "(972) 632-6912",
   location: "Little Elm, TX",
   github: "https://github.com/lmn4121/Project-Portfolio",
   resumePath: "/Landon_Nguyen_Resume.pdf",
@@ -20,6 +19,9 @@ export const education = {
   currentCoursework: [
     "Statistical Analysis with SAS",
     "Linear Algebra and Statistics with R",
+    "CrewAI",
+    "MCP",
+    "Agent Guardrails",
   ],
   upcomingCoursework: [
     "Advanced Regression Analysis",

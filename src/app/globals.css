@@ -451,6 +451,23 @@ img {
   color: var(--teal);
 }
 
+.edu-sublist {
+  margin-top: 0.9rem;
+}
+
+.edu-sublist:first-of-type {
+  margin-top: 0;
+}
+
+.edu-sublist h5 {
+  margin: 0 0 0.4rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 650;
+}
+
 .edu-list ul {
   margin: 0;
   padding: 0;

@@ -14,19 +14,25 @@ export const education = {
   location: "Arlington, TX",
   expected: "December 2027",
   program:
-    "Fastrack M.S. Applied Statistics and Data Science | B.S. Data Science | Biology Concentration | Minor in Mathematics",
+    "Dual-Track M.S. Applied Statistics and Data Science | B.S. Data Science | Biology Concentration | Minor in Mathematics",
   gpa: "3.9",
   currentCoursework: [
     "Statistical Analysis with SAS",
     "Linear Algebra and Statistics with R",
-    "CrewAI",
-    "MCP",
     "Agent Guardrails",
+    "OpenAI Agents SDK",
+    "CrewAI",
+    "QLoRA",
   ],
   upcomingCoursework: [
     "Advanced Regression Analysis",
     "Machine Learning Applications",
     "Data Mining with Information Visualization",
+    "LangGraph/LangChain",
+    "MCP",
+    "MLOps",
+    "Azure Databricks",
+    "Spark",
   ],
   certifications: [
     "IBM Machine Learning with Python",

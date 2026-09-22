@@ -34,7 +34,7 @@ If Render CORS is later restricted, allow the Vercel origin(s) on the twin host 
 
 ## About
 
-I’m a data science student at **The University of Texas at Arlington** in the Fastrack program (**B.S. Data Science** with a Biology concentration and Mathematics minor; **M.S. Applied Statistics and Data Science**, expected **December 2027**; GPA **3.9**).
+I’m a data science student at **The University of Texas at Arlington** in the Dual-Track program (**B.S. Data Science** with a Biology concentration and Mathematics minor; **M.S. Applied Statistics and Data Science**, expected **December 2027**; GPA **3.9**).
 
 I have about **6 years** of programming experience and **2 years** applying statistical, data mining, and machine learning methods to research and data-driven problems. I’m especially interested in combining **AI engineering** with data science to build intelligent and autonomous systems.
 

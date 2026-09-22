@@ -60,7 +60,7 @@ export default function HomePage() {
               <div className="about-text">
                 <p>{site.summary}</p>
                 <p>
-                  Currently in the Fastrack program at {education.school}, pursuing
+                  Currently in the Dual-Track program at {education.school}, pursuing
                   a B.S. in Data Science with a Biology concentration and Mathematics
                   minor alongside an M.S. in Applied Statistics and Data Science
                   (expected {education.expected}; GPA {education.gpa}).
@@ -115,19 +115,41 @@ export default function HomePage() {
               <div className="edu-lists">
                 <div className="edu-list">
                   <h4>Current coursework</h4>
-                  <ul>
-                    {education.currentCoursework.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
+                  <div className="edu-sublist">
+                    <h5>Coursework</h5>
+                    <ul>
+                      {education.currentCoursework.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="edu-sublist">
+                    <h5>Independent studies</h5>
+                    <ul>
+                      {education.currentIndependentStudies.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
                 <div className="edu-list">
                   <h4>Upcoming coursework</h4>
-                  <ul>
-                    {education.upcomingCoursework.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
+                  <div className="edu-sublist">
+                    <h5>Coursework</h5>
+                    <ul>
+                      {education.upcomingCoursework.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="edu-sublist">
+                    <h5>Independent studies</h5>
+                    <ul>
+                      {education.upcomingIndependentStudies.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
                 <div className="edu-list">
                   <h4>Certifications</h4>

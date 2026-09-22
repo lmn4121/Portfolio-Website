@@ -19,6 +19,8 @@ export const education = {
   currentCoursework: [
     "Statistical Analysis with SAS",
     "Linear Algebra and Statistics with R",
+  ],
+  currentIndependentStudies: [
     "Agent Guardrails",
     "OpenAI Agents SDK",
     "CrewAI",
@@ -28,6 +30,8 @@ export const education = {
     "Advanced Regression Analysis",
     "Machine Learning Applications",
     "Data Mining with Information Visualization",
+  ],
+  upcomingIndependentStudies: [
     "LangGraph/LangChain",
     "MCP",
     "MLOps",
@@ -94,7 +98,7 @@ export const skills = [
   },
   {
     label: "Tools",
-    items: ["GitHub", "Jupyter", "SQLite"],
+    items: ["GitHub", "Jupyter", "SQLite", "Claude", "Cursor"],
   },
 ];
 

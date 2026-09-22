@@ -98,7 +98,7 @@ export const skills = [
   },
   {
     label: "Tools",
-    items: ["GitHub", "Jupyter", "SQLite"],
+    items: ["GitHub", "Jupyter", "SQLite", "Claude", "Cursor"],
   },
 ];
 

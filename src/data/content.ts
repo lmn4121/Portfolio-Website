@@ -124,7 +124,7 @@ export const projects: Project[] = [
   {
     id: "capstone",
     title: "Infant Mortality Prediction & Explainable AI App",
-    subtitle: "DATA-4332: Capstone",
+    subtitle: "DATA-4381 & DATA-4382: Capstone",
     branch: "Capstone-Project",
     branchUrl:
       "https://github.com/lmn4121/Project-Portfolio/tree/Capstone-Project",
@@ -185,7 +185,7 @@ export const projects: Project[] = [
     bullets: [
       "Built an agentic chatbot that answers recruiter questions about my background using retrieval-augmented generation (RAG) with the OpenAI Agents SDK over LLM-assisted semantic chunks stored in ChromaDB.",
       "Added tools for email capture and unanswered-question logging so the agent records gaps instead of hallucinating.",
-      "Built a Gradio UI hosted on Render and embedded it as a portfolio chat widget behind a backend proxy, with no client-side API keys.",
+      "Deployed the Gradio app on Render and embedded it on this site as a native chat widget; the OpenAI key stays server-side on Render, so no API keys reach the browser.",
     ],
   },
 ];

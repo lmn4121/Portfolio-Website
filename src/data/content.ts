@@ -124,7 +124,7 @@ export const projects: Project[] = [
   {
     id: "capstone",
     title: "Infant Mortality Prediction & Explainable AI App",
-    subtitle: "DATA-4381 & DATA-4382: Capstone",
+    subtitle: "DATA-4381 & DATA-4382: Capstone · Team project with Alex Nguyen",
     branch: "Capstone-Project",
     branchUrl:
       "https://github.com/lmn4121/Project-Portfolio/tree/Capstone-Project",

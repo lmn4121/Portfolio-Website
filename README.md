@@ -50,7 +50,7 @@ The portfolio site lives on **main**. Each project lives on its **own branch** w
 ## Projects
 
 ### [Capstone-Project](https://github.com/lmn4121/Project-Portfolio/tree/Capstone-Project) — Infant Mortality Prediction & Explainable AI App
-Two-semester undergraduate capstone (**DATA-4381 & DATA-4382: Capstone**): predict infant mortality rate (IMR) for districts in India’s Empowered Action Group states using Annual Health Survey indicators.
+Two-semester undergraduate capstone (**DATA-4381 & DATA-4382: Capstone**), a team project with Alex Nguyen: predict infant mortality rate (IMR) for districts in India’s Empowered Action Group states using Annual Health Survey indicators.
 
 **Techniques:** EDA (leakage, multicollinearity, missingness), state-wise imputation, robust scaling, forward selection + agglomerative clustering/PCA (643 → 50 → 14 features), linear and tree-based benchmarks (AdaBoost with linear base estimators, Random Forest, XGBoost), final **ANN**, SHAP explainability, Streamlit deployment with an AI agent for interpretation.
 

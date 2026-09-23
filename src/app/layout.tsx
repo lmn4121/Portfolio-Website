@@ -18,13 +18,13 @@ const body = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "Landon Nguyen — Data Scientist | AI Engineering",
+  title: "Landon Nguyen — Data Science | AI Engineering",
   description:
-    "Portfolio of Landon Nguyen — data science student at UT Arlington focused on machine learning, computer vision, and AI engineering.",
+    "Portfolio of Landon Nguyen — data science student at UT Arlington building ML and LLM applications, from explainable neural networks to RAG systems and AI agents.",
   openGraph: {
-    title: "Landon Nguyen — Data Scientist | AI Engineering",
+    title: "Landon Nguyen — Data Science | AI Engineering",
     description:
-      "Projects in predictive modeling, computer vision, Kaggle datathons, and agentic AI.",
+      "Projects in explainable ML, computer vision, RAG, and agentic AI.",
     type: "website",
   },
 };

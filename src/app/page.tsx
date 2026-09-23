@@ -114,9 +114,9 @@ export default function HomePage() {
               </div>
               <div className="edu-lists">
                 <div className="edu-list">
-                  <h4>Current coursework</h4>
+                  <h4>Coursework</h4>
                   <div className="edu-sublist">
-                    <h5>Coursework</h5>
+                    <h5>Current</h5>
                     <ul>
                       {education.currentCoursework.map((item) => (
                         <li key={item}>{item}</li>
@@ -124,28 +124,28 @@ export default function HomePage() {
                     </ul>
                   </div>
                   <div className="edu-sublist">
-                    <h5>Independent studies</h5>
-                    <ul>
-                      {education.currentIndependentStudies.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                <div className="edu-list">
-                  <h4>Upcoming coursework</h4>
-                  <div className="edu-sublist">
-                    <h5>Coursework</h5>
+                    <h5>Upcoming</h5>
                     <ul>
                       {education.upcomingCoursework.map((item) => (
                         <li key={item}>{item}</li>
                       ))}
                     </ul>
                   </div>
+                </div>
+                <div className="edu-list">
+                  <h4>AI study</h4>
                   <div className="edu-sublist">
-                    <h5>Independent studies</h5>
+                    <h5>Self-study</h5>
                     <ul>
-                      {education.upcomingIndependentStudies.map((item) => (
+                      {education.selfStudy.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="edu-sublist">
+                    <h5>Planned (by Jan 2027)</h5>
+                    <ul>
+                      {education.plannedStudy.map((item) => (
                         <li key={item}>{item}</li>
                       ))}
                     </ul>

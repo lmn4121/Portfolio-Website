@@ -4,13 +4,15 @@ This repo is Landon Nguyen's portfolio site (deployed via Vercel), sourced from
 this GitHub repo: https://github.com/lmn4121/Project-Portfolio
 
 ## Related context (not in this repo)
-Planning and course-tracking docs live in a sibling folder, not committed here:
-`../roadmap/roadmap.md` and `../roadmap/course-log.md`
+Planning docs (roadmap.md, course-log.md, the current resume) live on Landon's
+computer and in a Cowork project, NOT in this repo. Claude Code runs in the
+cloud and cannot read them. Landon pastes or attaches what a task needs at the
+start of the session (usually a self-contained task file such as
+`portfolio-updates.md`, or the relevant course-log entry).
 
-When asked to add a new project or update the site with something recently
-completed, check `../roadmap/course-log.md` first for the relevant details
-(what was built, techniques used, results) rather than asking the user to
-re-explain it.
+If a task depends on details you weren't given (metrics, what was built,
+course names), check this repo's notebooks/reports/READMEs first, then ask
+Landon. Don't guess.
 
 ## Site conventions
 - Each project entry follows the existing pattern: title, course/context tag,
@@ -19,11 +21,18 @@ re-explain it.
   Digital Twin) as the template for tone and structure.
 - Keep bullet summaries factual and specific (numbers, model names, metrics) —
   match the existing voice, not generic marketing language.
-- Don't invent results or metrics not confirmed by the user or course-log.md.
+- Don't invent results or metrics not confirmed by the user or found in this repo.
+- Always label which split a metric comes from (train / validation / test), and
+  lead with the test metric. Metrics on the site must match Landon's current resume
+  (he provides the relevant text or file when it matters).
+- Use official course names for course tags (e.g., "DATA-4380: Data Problems");
+  assignment names like "Computer Vision" can appear in the description only.
 
 ## When adding a new project
-1. Check `../roadmap/course-log.md` for what was built and what it's worth
-   highlighting.
+1. Use the course-log entry / notes Landon provides for what was built and what
+   it's worth highlighting; fill gaps from the project's branch in this repo.
 2. Draft the write-up matching the existing project card structure.
 3. Confirm with the user before publishing/deploying — don't push to
    production without a review step.
+4. End with a short summary of what changed (and anything left unresolved) so
+   Landon can log it in his roadmap.

@@ -1,12 +1,12 @@
 export const site = {
   name: "Landon Nguyen",
   title: "Data Science | AI Engineering",
-  email: "lmnguyen420@gmail.com",
+  email: "landonnguyen.ds@gmail.com",
   location: "Little Elm, TX",
   github: "https://github.com/lmn4121/Project-Portfolio",
   resumePath: "/Landon_Nguyen_Resume.pdf",
   summary:
-    "Data science student with 6 years of programming experience and 2 years applying statistics and machine learning to research problems. Builds and deploys ML and LLM applications, from explainable neural networks to RAG systems and AI agents.",
+    "Data science student with 6 years of programming experience and 3 years applying statistics and machine learning to data-driven problems and research. Builds and deploys ML and LLM applications, from explainable neural networks to RAG systems and AI agents.",
 };
 
 export const education = {

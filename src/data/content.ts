@@ -6,7 +6,7 @@ export const site = {
   github: "https://github.com/lmn4121/Project-Portfolio",
   resumePath: "/Landon_Nguyen_Resume.pdf",
   summary:
-    "Data science student with 6 years of programming experience and 2 years applying statistical, data mining, and machine learning methods to research and data-driven problems. Combining AI engineering with data science to build intelligent and autonomous systems.",
+    "Data science student with 6 years of programming experience and 2 years applying statistics and machine learning to research problems. Builds and deploys ML and LLM applications, from explainable neural networks to RAG systems and AI agents.",
 };
 
 export const education = {
@@ -90,11 +90,10 @@ export const skills = [
       "Multivariate Statistics",
       "Nonparametric Tests",
       "Linear Algebra",
-      "Calculus",
     ],
   },
   {
-    label: "Tools",
+    label: "Tools & Deployment",
     items: [
       "Git/GitHub",
       "Jupyter",
@@ -121,6 +120,23 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: "digital-twin",
+    title: "AI Resume Digital Twin",
+    subtitle: "LLM & Agentic AI — Independent Project",
+    branch: "Digital-Twin",
+    branchUrl:
+      "https://github.com/lmn4121/Project-Portfolio/tree/Digital-Twin",
+    techniques:
+      "LLM-assisted semantic chunking into ChromaDB; RAG with the OpenAI Agents SDK; email-capture and unanswered-question-logging tools; Gradio streaming chat UI hosted on Render.",
+    result:
+      "Try it on this site via Ask Landon’s twin: retrieval-grounded answers, with tools that record leads and unanswered questions (it records gaps instead of hallucinating).",
+    bullets: [
+      "Built an agentic chatbot that answers recruiter questions about my background using retrieval-augmented generation (RAG) with the OpenAI Agents SDK over LLM-assisted semantic chunks stored in ChromaDB.",
+      "Added tools for email capture and unanswered-question logging so the agent records gaps instead of hallucinating.",
+      "Deployed the Gradio app on Render and embedded it on this site as a native chat widget; the OpenAI key stays server-side on Render, so no API keys reach the browser.",
+    ],
+  },
   {
     id: "capstone",
     title: "Infant Mortality Prediction & Explainable AI App",
@@ -171,28 +187,9 @@ export const projects: Project[] = [
       "Compared a simple neural network, AdaBoost, and boosted gradient ensembles on patient location, age, and diagnosis features.",
     ],
   },
-  {
-    id: "digital-twin",
-    title: "AI Resume Digital Twin",
-    subtitle: "LLM & Agentic AI — Independent Project",
-    branch: "Digital-Twin",
-    branchUrl:
-      "https://github.com/lmn4121/Project-Portfolio/tree/Digital-Twin",
-    techniques:
-      "LLM-assisted semantic chunking into ChromaDB; RAG with the OpenAI Agents SDK; email-capture and unanswered-question-logging tools; Gradio streaming chat UI hosted on Render.",
-    result:
-      "Try it on this site via Ask Landon’s twin: retrieval-grounded answers, with tools that record leads and unanswered questions (it records gaps instead of hallucinating).",
-    bullets: [
-      "Built an agentic chatbot that answers recruiter questions about my background using retrieval-augmented generation (RAG) with the OpenAI Agents SDK over LLM-assisted semantic chunks stored in ChromaDB.",
-      "Added tools for email capture and unanswered-question logging so the agent records gaps instead of hallucinating.",
-      "Deployed the Gradio app on Render and embedded it on this site as a native chat widget; the OpenAI key stays server-side on Render, so no API keys reach the browser.",
-    ],
-  },
 ];
 
 export const independentAi = [
+  "Built agentic workflows with the OpenAI Agents SDK, including an automated email pipeline.",
   "Built a multimodal chatbot integrating LLMs, image generation, and text-to-speech to simulate interactive stories.",
-  "Used LLMs to translate Python code into C++ for performance-oriented processing.",
-  "Implemented Retrieval-Augmented Generation (RAG) to provide business-specific context to LLMs.",
-  "Built agentic applications using OpenAI Agents SDK, including a digital twin and an automated email workflow.",
 ];

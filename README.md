@@ -36,7 +36,7 @@ If Render CORS is later restricted, allow the Vercel origin(s) on the twin host 
 
 I’m a data science student at **The University of Texas at Arlington** in the Dual-Track program (**B.S. Data Science** with a Biology concentration and Mathematics minor; **M.S. Applied Statistics and Data Science**, expected **December 2027**; GPA **3.9**).
 
-I have about **6 years** of programming experience and **2 years** applying statistics and machine learning to research problems. I build and deploy **ML and LLM applications**, from explainable neural networks to RAG systems and AI agents.
+I have about **6 years** of programming experience and **3 years** applying statistics and machine learning to data-driven problems and research. I build and deploy **ML and LLM applications**, from explainable neural networks to RAG systems and AI agents.
 
 **Core toolkit (from resume):** Python, SQL, R, SAS; NumPy/Pandas/scikit-learn; TensorFlow/Keras and PyTorch; LLMs, RAG, and agent tooling.
 

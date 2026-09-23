@@ -55,6 +55,9 @@ export function ChatWidget() {
   const listRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
   const modeRef = useRef<TwinMode | null>(null);
+  // Gradio twin memory is keyed on this id: one per page load (messages aren't
+  // persisted either), replaced on "New chat".
+  const visitorIdRef = useRef<string>("");
 
   useEffect(() => {
     setMounted(true);
@@ -182,10 +185,12 @@ export function ChatWidget() {
             ac.signal,
           );
         } else {
+          visitorIdRef.current ||= newMessageId();
           await streamGradioChat(
             origin,
             trimmed,
             historyForGradio,
+            visitorIdRef.current,
             applyFull,
             ac.signal,
           );
@@ -239,8 +244,10 @@ export function ChatWidget() {
     const resolved = modeRef.current;
     if (resolved === "fastapi") {
       await resetFastapiChat(origin, sessionId || readSessionId());
-    } else {
-      await resetGradioChat(origin);
+    } else if (visitorIdRef.current) {
+      const previousId = visitorIdRef.current;
+      visitorIdRef.current = newMessageId();
+      await resetGradioChat(origin, previousId);
     }
   }, [origin, sessionId]);
 

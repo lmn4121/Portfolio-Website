@@ -2,6 +2,8 @@
  * Client for Landon's digital twin on Render.
  *
  * Live host (Gradio 6): POST /gradio_api/call/respond + SSE on the event_id.
+ * Gradio gives every /call request a fresh session_hash, so the widget sends
+ * its own visitor id as an extra input; the twin keys its memory on that id.
  * Optional FastAPI host (Project-Portfolio twin-api): POST /chat/stream SSE.
  */
 
@@ -171,12 +173,13 @@ export async function streamGradioChat(
   origin: string,
   message: string,
   history: GradioMessage[],
+  visitorId: string,
   onToken: (text: string) => void,
   signal: AbortSignal,
 ): Promise<void> {
   const eventId = await postEventId(
     `${origin}/gradio_api/call/respond`,
-    { data: [message, history] },
+    { data: [message, history, visitorId] },
     signal,
   );
 
@@ -227,13 +230,14 @@ export async function streamGradioChat(
 
 export async function resetGradioChat(
   origin: string,
+  visitorId: string,
   signal?: AbortSignal,
 ): Promise<void> {
   const controller = signal ?? new AbortController().signal;
   try {
     const eventId = await postEventId(
       `${origin}/gradio_api/call/new_chat`,
-      { data: [] },
+      { data: [visitorId] },
       controller,
     );
     await fetch(`${origin}/gradio_api/call/new_chat/${eventId}`, {

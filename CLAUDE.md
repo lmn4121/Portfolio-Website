@@ -1,8 +1,8 @@
 # Project instructions for Claude Code
 
 This repo (https://github.com/lmn4121/Portfolio-Website) is Landon Nguyen's
-portfolio site. Vercel deploys it from this repo: `main` is production, and PRs
-get preview deployments.
+portfolio site. The site is sourced and deployed (Vercel) from this repo only:
+`main` is production, and PRs get preview deployments.
 
 The projects the site links to live on per-project branches of a separate repo,
 https://github.com/lmn4121/Project-Portfolio (Capstone-Project,

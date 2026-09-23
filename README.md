@@ -1,6 +1,6 @@
 # Project Portfolio
 
-Collection of projects by **Landon Nguyen** — Data Scientist / AI Engineering.
+Collection of projects by **Landon Nguyen** — Data Science | AI Engineering.
 
 ## Portfolio website
 
@@ -49,30 +49,30 @@ The portfolio site lives on **main**. Each project lives on its **own branch** w
 
 ## Projects
 
-### [Capstone-Project](https://github.com/lmn4121/Project-Portfolio/tree/Capstone-Project) — Infant Mortality Rate Study
-Undergraduate capstone (**DATA-4332**): predict infant mortality rate (IMR) for districts in India’s Empowered Action Group states using Annual Health Survey indicators.
+### [Capstone-Project](https://github.com/lmn4121/Project-Portfolio/tree/Capstone-Project) — Infant Mortality Prediction & Explainable AI App
+Undergraduate capstone (**DATA-4332: Capstone**): predict infant mortality rate (IMR) for districts in India’s Empowered Action Group states using Annual Health Survey indicators.
 
-**Techniques:** EDA (leakage, multicollinearity, missingness), state-wise imputation, robust scaling, forward selection + agglomerative clustering/PCA (643 → 50 → 14 features), linear and tree baselines, final **ANN**, SHAP explainability, Streamlit deployment with XAI + agentic interpretation.
+**Techniques:** EDA (leakage, multicollinearity, missingness), state-wise imputation, robust scaling, forward selection + agglomerative clustering/PCA (643 → 50 → 14 features), linear and tree-based benchmarks (AdaBoost with linear base estimators, Random Forest, XGBoost), final **ANN**, SHAP explainability, Streamlit deployment with an AI agent for interpretation.
 
-**Results:** Best ANN about **R² 0.86** and **RMSE 5.1** (train; test R² ~0.87).
+**Results:** Final ANN **test R² 0.87** and **test RMSE 5.1** (training R² 0.86, RMSE 5.1).
 
 ### [Kaggle-Project](https://github.com/lmn4121/Project-Portfolio/tree/Kaggle-Project) — Metastatic Cancer Diagnosis
 WiDS Datathon 2024 Challenge 1: binary classification of whether a patient received a metastatic cancer diagnosis within 90 days of screening.
 
 **Techniques:** Feature filtering, mode imputation, one-hot encoding, simple neural net, AdaBoost, and gradient boosting with GridSearchCV.
 
-**Results:** ~**80%** validation accuracy; Kaggle private/public scores **0.789** / **0.798**. Best among compared models: boosted gradient ensemble.
+**Results:** Kaggle test set **ROC AUC**: private **0.789**, public **0.798** (gradient boosting ensemble). Held-out split: test ROC AUC 0.791, validation ROC AUC 0.802, validation accuracy ~81%.
 
 ### [Data4380-Computer-Vision](https://github.com/lmn4121/Project-Portfolio/tree/Data4380-Computer-Vision) — Chest X-Ray Classification
-**DATA 4380** computer vision project: classify chest X-rays as **COVID-19**, **Normal**, or **Viral Pneumonia** ([Kaggle dataset](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset)).
+**DATA-4380: Data Problems** Computer Vision assignment: classify chest X-rays as **COVID-19**, **Normal**, or **Viral Pneumonia** ([Kaggle dataset](https://www.kaggle.com/datasets/pranavraikokte/covid19-image-dataset)).
 
-**Techniques:** Baselines (ANN/CNN), CLAHE and augmentation, frozen VGG16 exploration, final fine-tuned **DenseNet201** with class weights.
+**Techniques:** TensorFlow/Keras; CLAHE and augmentation; ANN, CNN, and frozen VGG16 baselines; final fine-tuned **DenseNet201** with class weights.
 
-**Results:** Final model **validation macro F1 0.92**, **test macro F1 0.83** (written report). Branch also includes the course report and presentation PDFs.
+**Results:** Final model **test macro F1 0.83** (validation macro F1 0.92; written report). Branch also includes the course report and presentation PDFs.
 
-### [Digital-Twin](https://github.com/lmn4121/Project-Portfolio/tree/Digital-Twin) — Resume Chatbot
+### [Digital-Twin](https://github.com/lmn4121/Project-Portfolio/tree/Digital-Twin) — AI Resume Digital Twin
 Conversational digital twin that answers questions about background, skills, and experience using the resume plus a project knowledge base.
 
-**Techniques:** LLM-assisted semantic chunking into Chroma (`ingest.py`); OpenAI Agents SDK twin with RAG, email capture, and unknown-question tools (`twin.py`); Gradio streaming chat UI (`app.py`).
+**Techniques:** LLM-assisted semantic chunking into ChromaDB (`ingest.py`); OpenAI Agents SDK twin with RAG, email capture, and unknown-question tools (`twin.py`); Gradio streaming chat UI (`app.py`).
 
 **Results:** End-to-end twin chatbot with retrieval-grounded answers and tools to record leads / unanswered questions instead of inventing replies. Branch includes `requirements.txt` and a prebuilt `twin_db/` vector store.

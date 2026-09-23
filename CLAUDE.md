@@ -1,7 +1,14 @@
 # Project instructions for Claude Code
 
-This repo is Landon Nguyen's portfolio site (deployed via Vercel), sourced from
-this GitHub repo: https://github.com/lmn4121/Project-Portfolio
+This repo (https://github.com/lmn4121/Portfolio-Website) is Landon Nguyen's
+portfolio site. The site is sourced and deployed (Vercel) from this repo only:
+`main` is production, and PRs get preview deployments.
+
+The projects the site links to live on per-project branches of a separate repo,
+https://github.com/lmn4121/Project-Portfolio (Capstone-Project,
+Data4380-Computer-Vision, Kaggle-Project, Digital-Twin). The live digital twin
+on Render deploys from Landon's private Digital-Twin repo, not from either of
+these.
 
 ## Related context (not in this repo)
 Planning docs (roadmap.md, course-log.md, the current resume) live on Landon's
